@@ -4,6 +4,7 @@
 package icc.pap.camposmonitor;
 
 import icc.pap.models.Lectura;
+import icc.pap.models.Reporte;
 
 public class App {
 
@@ -49,7 +50,21 @@ public class App {
 
         System.out.println("Transformada: " + ocupacionTranformada.getIdSensor() + " | " + ocupacionTranformada.getValor() + " | " +ocupacionTranformada.getUnidad() );
 
-    }
+
+        // Double a object
+
+        Lectura<Double> algoNuevo = new Lectura<>("s01", 22.5, "C");
+        System.out.println("Original: " + algoNuevo.getIdSensor() + "|" + algoNuevo.getValor() + algoNuevo.getUnidad() );        
+   
+        Lectura<Reporte> objetosTransformar = new Lectura<Reporte>("s01", 
+            new Reporte(
+                algoNuevo.getIdSensor(),
+                algoNuevo.getValor(),
+                algoNuevo.getUnidad()),"C");
+        
+
+        System.out.println("Transformado: " + objetosTransformar.getIdSensor() + " | " + objetosTransformar.getValor() + " | " + objetosTransformar.getUnidad());
+        }
 
 }
                                                 

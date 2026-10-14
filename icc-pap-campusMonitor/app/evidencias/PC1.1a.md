@@ -9,3 +9,7 @@ La T es una clase generica al no estar especificada para que operar entonces pod
 RunLectura para la impresion de datos usando `Lectura.java`, asi completando la practica
 
 ![alt text](<Captura de pantalla 2026-10-13 195556.png>)
+
+### segunda practica
+Tranformar daatos de Double a Double,y  de Integer a String con el uso de las Fuction 
+![alt text](<Captura de pantalla 2026-10-14 155716.png>)
